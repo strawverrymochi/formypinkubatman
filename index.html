@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Baby 💖</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffc0cb, #ffe4ec, #ffd6f6);
+            font-family: "Comic Sans MS", cursive;
+            text-align: center;
+            padding: 30px;
+            overflow: hidden;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+            display: inline-block;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #ff4da6;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #ff1493;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 24px;
+            animation: float 6s infinite ease-in;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-10vh); opacity: 0; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- floating emojis -->
+<div class="emoji" style="left:10%;">💖</div>
+<div class="emoji" style="left:30%; animation-delay:1s;">🌸</div>
+<div class="emoji" style="left:50%; animation-delay:2s;">🧸</div>
+<div class="emoji" style="left:70%; animation-delay:3s;">💗</div>
+<div class="emoji" style="left:90%; animation-delay:4s;">✨</div>
+
+<div class="card">
+
+    <img src="getwellsoon.gif" width="200" style="border-radius:20px; margin-bottom:10px;">
+
+    <h1>Get Well Soon Baby 🥺💗</h1>
+
+    <p>hey my love 💞</p>
+    <p>i hate seeing you sick like this 😔</p>
+    <p>but don’t worry, your personal nurse (me 😌) is here 💉💖</p>
+    <p>you better get well soon warna I’m coming to annoy you in person 😤💘</p>
+
+    <button onclick="showLove()">click me cutie 💌</button>
+
+    <p id="loveMessage" style="display:none; margin-top:15px;">
+        I love you soooo much 😭💖<br>
+        pls take your meds 🥺<br>
+        drink water 😡💧<br>
+        and come back to me fast 😚💋
+    </p>
+</div>
+
+<script>
+function showLove() {
+    document.getElementById("loveMessage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
